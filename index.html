@@ -8,36 +8,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
-            color: #333;
+            color: #17445E;
         }
         .hero-section {
-            background: linear-gradient(135deg, #a3bffa 0%, #c3e4ff 100%);
+            background: linear-gradient(135deg, #eaf6f6 0%, #f8f9fa 100%);
             padding: 100px 0;
             text-align: center;
         }
         .hero-section h1 {
             font-size: 3rem;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #17445E;
         }
         .hero-section p {
             font-size: 1.25rem;
-            color: #444;
+            color: #17445E;
         }
         .btn-custom {
-            background-color: #007bff;
+            background-color: #17445E;
             color: white;
             padding: 10px 20px;
             font-size: 1.1rem;
             border-radius: 25px;
             transition: background-color 0.3s;
+            border: none;
         }
         .btn-custom:hover {
-            background-color: #0056b3;
+            background-color: #009688;
         }
         .section-padding {
             padding: 60px 0;
@@ -45,14 +48,14 @@
         .card {
             border: none;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
             transition: transform 0.3s;
         }
         .card:hover {
             transform: translateY(-5px);
         }
         .card h3 {
-            color: #007bff;
+            color: #009688;
         }
         .why-choose-us ul {
             list-style: none;
@@ -61,26 +64,27 @@
         .why-choose-us ul li {
             font-size: 1.1rem;
             margin-bottom: 10px;
-            color: #444;
+            color: #17445E;
         }
         .why-choose-us ul li::before {
             content: "✔";
-            color: #007bff;
+            color: #009688;
             margin-right: 10px;
         }
         .contact-section {
-            background-color: #e9ecef;
+            background-color: #eaf6f6;
         }
         .contact-section a {
-            color: #007bff;
+            color: #009688;
             text-decoration: none;
             margin: 0 10px;
         }
         .contact-section a:hover {
             text-decoration: underline;
+            color: #17445E;
         }
         footer {
-            background-color: #1a1a1a;
+            background-color: #17445E;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -88,10 +92,34 @@
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" style="border-bottom: 2px solid #eaf6f6;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="color: #17445E; font-size: 1.7rem; letter-spacing: 2px;">
+                <span style="color: #009688;">&lt;<i class="fa-solid fa-pencil" style="color: #009688;"></i>&gt;</span> TECHIE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #17445E;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: #17445E;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how" style="color: #17445E;">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: #17445E;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why" style="color: #17445E;">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing" style="color: #17445E;">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq" style="color: #17445E;">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: #009688; font-weight: 600;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1>Websites starting at just ₹499!</h1>
+            <h1>Websites starting at just ₹999!</h1>
             <p class="lead">Helping students and creators build their online presence</p>
             <a href="https://www.instagram.com/" class="btn btn-custom mt-3">DM on Instagram</a>
             <a href="#contact" class="btn btn-custom mt-3">Get Started</a>
@@ -99,29 +127,87 @@
     </section>
 
     <!-- About Techie -->
-    <section class="section-padding">
+    <section class="section-padding" id="about">
         <div class="container">
             <h2 class="text-center mb-5">About Techie</h2>
-            <p class="text-center">Techie is a passionate freelancer's side hustle, dedicated to empowering students and creators with affordable, custom-designed digital solutions. We specialize in crafting stunning 1-page websites and creative Canva-based design packs to help you stand out online.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center mb-4">Techie is a creative solo business founded with a passion for empowering students, creators, and small businesses to shine online. With a focus on affordability and quality, Techie delivers custom-designed digital solutions that help you stand out in a crowded digital world.</p>
+                    <div class="row text-center mb-3">
+                        <div class="col-md-4 mb-3">
+                            <div style="font-size:2rem; color:#009688;">&#128161;</div>
+                            <h5 class="mt-2" style="color:#17445E;">Our Mission</h5>
+                            <p style="font-size:0.98rem;">To make professional web and design services accessible to everyone, regardless of budget or background.</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div style="font-size:2rem; color:#009688;">&#128188;</div>
+                            <h5 class="mt-2" style="color:#17445E;">Our Values</h5>
+                            <p style="font-size:0.98rem;">Creativity, reliability, and a client-first approach—every project is unique and treated with care.</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div style="font-size:2rem; color:#009688;">&#128640;</div>
+                            <h5 class="mt-2" style="color:#17445E;">Our Story</h5>
+                            <p style="font-size:0.98rem;">Born from a love for design and technology, Techie is your partner in building a digital presence that truly represents you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- How It Works Section -->
+    <section class="section-padding bg-light" id="how">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div style="font-size:2.5rem; color:#009688;">&#128172;</div>
+                    <h5 class="mt-3" style="color:#17445E;">1. Consult</h5>
+                    <p>Share your vision, needs, and ideas. We’ll discuss your goals and the best way to bring them to life.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div style="font-size:2.5rem; color:#009688;">&#128187;</div>
+                    <h5 class="mt-3" style="color:#17445E;">2. Create</h5>
+                    <p>We design and build your website or design pack, keeping you updated at every step for feedback and revisions.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div style="font-size:2.5rem; color:#009688;">&#127881;</div>
+                    <h5 class="mt-3" style="color:#17445E;">3. Launch</h5>
+                    <p>Your project goes live! We provide support and guidance to ensure a smooth launch and lasting impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
     <!-- What We Offer -->
     <section class="section-padding bg-light">
         <div class="container">
             <h2 class="text-center mb-5">What We Offer</h2>
             <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card p-4 text-center">
-                        <h3>🖥️ Portfolio/Resume Websites</h3>
-                        <p>Professional 1-page websites to showcase your skills and achievements, starting at just ₹499.</p>
-                    </div>
+                <div class="col-md-4 mb-4">
+                    <a href="sample-portfolio.html" target="_blank" style="text-decoration:none;">
+                        <div class="card p-4 text-center h-100" style="transition:box-shadow 0.3s;">
+                            <h3>🖥️ Portfolio/Resume Websites</h3>
+                            <p>Professional 1-page websites to showcase your skills and achievements, starting at just ₹999.</p>
+                            <button class="btn btn-custom mt-3">View Sample</button>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card p-4 text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4 text-center h-100">
                         <h3>🎨 Canva Design Packs</h3>
                         <p>Custom-designed posters, carousels, quote packs, and more to elevate your brand. Contact for custom pricing.</p>
                     </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="sample-resume.html" target="_blank" style="text-decoration:none;">
+                        <div class="card p-4 text-center h-100" style="transition:box-shadow 0.3s;">
+                            <h3>📄 Professional Resume Writing</h3>
+                            <p>Get a standout, ATS-friendly resume written and designed to highlight your strengths and land your dream job.</p>
+                            <button class="btn btn-custom mt-3">View Sample</button>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -147,7 +233,7 @@
                 <div class="col-md-6 offset-md-3 text-center">
                     <div class="card p-4">
                         <h3>Standard 1-Page Website</h3>
-                        <p class="lead">₹499</p>
+                        <p class="lead">₹999</p>
                         <p>Perfect for portfolios, resumes, or personal branding.</p>
                         <p>For extra sections or advanced designs, request a custom quote.</p>
                     </div>
@@ -155,6 +241,127 @@
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    How long does it take to build a website?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Most 1-page websites are delivered within 3-5 days, depending on requirements and feedback speed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Can I request changes after delivery?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Minor revisions are included to ensure you’re happy with the final result.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    What do I need to get started?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Just your ideas, content (text/images), and any inspiration you have. I’ll guide you through the rest!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Do you offer support after launch?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! I’m here to help with any questions or tweaks after your project goes live.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies & Tools Section -->
+    <section class="section-padding bg-light" id="tech-tools">
+        <div class="container">
+            <h2 class="text-center mb-5">Technologies & Tools</h2>
+            <div class="row text-center justify-content-center">
+                <div class="col-6 col-md-2 mb-4">
+                    <div style="font-size:2.5rem; color:#E44D26;">&#60;&#47;&#62;</div>
+                    <div class="mt-2" style="color:#17445E;">HTML5</div>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <div style="font-size:2.5rem; color:#1572B6;">&#35;</div>
+                    <div class="mt-2" style="color:#17445E;">CSS3</div>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <div style="font-size:2.5rem; color:#563D7C;">&#9733;</div>
+                    <div class="mt-2" style="color:#17445E;">Bootstrap</div>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <div style="font-size:2.5rem; color:#F4C542;">&#128187;</div>
+                    <div class="mt-2" style="color:#17445E;">JavaScript</div>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <div style="font-size:2.5rem; color:#00C4CC;">&#127912;</div>
+                    <div class="mt-2" style="color:#17445E;">Canva</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Testimonials Section -->
+      <section class="section-padding bg-light" id="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonials</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4 h-100">
+                        <div style="font-size:2rem; color:#009688;">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="mb-2">“Techie made my portfolio website in just 3 days! The process was smooth and the result was amazing.”</p>
+                        <h6 class="mb-0" style="color:#17445E;">— Priya S., Student</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4 h-100">
+                        <div style="font-size:2rem; color:#009688;">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="mb-2">“Loved the custom Canva designs! My Instagram looks so much more professional now.”</p>
+                        <h6 class="mb-0" style="color:#17445E;">— Rahul K., Creator</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4 h-100">
+                        <div style="font-size:2rem; color:#009688;">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="mb-2">“Affordable, fast, and super friendly. Highly recommend Techie for any student or freelancer!”</p>
+                        <h6 class="mb-0" style="color:#17445E;">— Sneha M., Freelancer</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section class="section-padding contact-section">

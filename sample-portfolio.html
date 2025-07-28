@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Sharma | AI & Data Science Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #FFF8E7;
+            color: #333333;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background: #FF6F61;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: #000 !important;
+        }
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #FF6F61 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #FF6F61;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .btn-custom {
+            background: #FF6F61;
+            color: #fff;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .btn-custom:hover {
+            background: #000000;
+            color: #fff;
+        }
+        .skills-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 10px;
+            margin-bottom: 20px;
+        }
+        .skills-bar-fill {
+            background: #FF6F61;
+            height: 100%;
+            border-radius: 10px;
+            transition: width 1s ease-in-out;
+        }
+        .contact-box {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-control:focus {
+            border-color: #FF6F61;
+            box-shadow: 0 0 5px rgba(255,111,97,0.3);
+        }
+        footer {
+            background: #FF6F61;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-icons a {
+            color: #FF6F61;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nisha Sharma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Nisha Sharma</h1>
+            <p>4th Year Student | AI & Machine Learning | Data Science Enthusiast</p>
+            <a href="#contact" class="btn btn-custom mt-3">Hire Me</a>
+            <a href="resume.pdf" class="btn btn-custom mt-3 ms-3" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p>I'm Nisha Sharma, a 4th-year Computer Science student passionate about AI, Machine Learning, and Data Science. I specialize in building intelligent systems and data-driven solutions, with hands-on experience in Python, TensorFlow, and Pandas. Actively seeking job opportunities, I aim to leverage my skills in predictive modeling, data analysis, and algorithm development to solve real-world problems. My projects and achievements reflect my dedication to innovation and collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5 bg-light" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <p class="fw-bold">Python</p>
+                    <div class="skills-bar"><div class="skills-bar-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <p class="fw-bold">TensorFlow</p>
+                    <div class="skills-bar"><div class="skills-bar-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <p class="fw-bold">Pandas & NumPy</p>
+                    <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <p class="fw-bold">Scikit-learn</p>
+                    <div class="skills-bar"><div class="skills-bar-fill" style="width: 80%;"></div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <p class="fw-bold">Data Visualization (Matplotlib, Seaborn)</p>
+                    <div class="skills-bar"><div class="skills-bar-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <p class="fw-bold">SQL</p>
+                    <div class="skills-bar"><div class="skills-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <h5>Sentiment Analysis Model</h5>
+                        <p>Developed a deep learning model using LSTM and TensorFlow to analyze sentiment in social media posts. Achieved 92% accuracy on a dataset of 50,000 reviews, with preprocessing using NLTK.</p>
+                        <a href="#" target="_blank" class="btn btn-custom">View Project</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <h5>Predictive Analytics Dashboard</h5>
+                        <p>Built an interactive dashboard using Python, Pandas, and Plotly to predict customer churn for a retail dataset. Integrated machine learning models (Random Forest, XGBoost) with 88% accuracy.</p>
+                        <a href="#" target="_blank" class="btn btn-custom">View Project</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <h5>Image Classification with CNN</h5>
+                        <p>Designed a convolutional neural network (CNN) using TensorFlow to classify images in the CIFAR-10 dataset. Optimized model architecture to achieve 85% accuracy on test data.</p>
+                        <a href="#" target="_blank" class="btn btn-custom">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-5 bg-light" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <p><strong>Hackerrank Gold Badge</strong> in Python and Problem Solving (Top 5% globally).</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <p><strong>Google DevFest 2024</strong> – Participated in AI/ML workshop and hackathon, developed a real-time object detection prototype.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <p><strong>College Hackathon 2023</strong> – Secured 1st place for developing a predictive maintenance model for industrial equipment.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4">
+                        <p><strong>AI Club Lead</strong> – Organized 5+ workshops on machine learning and data science for 100+ students at university.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-box">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <p><i class="fas fa-envelope me-2"></i>Email: nisha.sharma@email.com</p>
+                        <p><i class="fab fa-linkedin me-2"></i>LinkedIn: <a href="https://linkedin.com/in/nishasharma" target="_blank">nishasharma</a></p>
+                        <p><i class="fab fa-github me-2"></i>GitHub: <a href="https://github.com/nishasharma" target="_blank">nishasharma</a></p>
+                        <p><i class="fas fa-code me-2"></i>Hackerrank: <a href="https://hackerrank.com/nishasharma" target="_blank">nishasharma</a></p>
+                        <div class="social-icons mt-3">
+                            <a href="https://linkedin.com/in/nishasharma" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/nishasharma" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://hackerrank.com/nishasharma" target="_blank"><i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message (e.g., job opportunities, collaborations)" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nisha Sharma. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
